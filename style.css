@@ -1,0 +1,199 @@
+/*! All Elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*! Body */
+body {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23230046' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%232f0052' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%233b075e' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%2348156a' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23552277' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+/*! Pizzas list */
+#output {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  color: white;
+}
+
+.pizza-item {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  display: grid;
+  grid-template-columns: 70% 10% 10% 10%;
+  /* width: 50%;
+  margin: 0 auto; */
+}
+.pizza-item img {
+  height: 1.5rem;
+  align-self: center;
+  justify-self: center;
+}
+.pizza-item img:last-of-type,
+.pizza-item p,
+.pizza-item button {
+  grid-column: span 4;
+}
+.pizza-item img:last-of-type {
+  height: 200px;
+}
+/*! Pizzas list END */
+
+/*! Navigation */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-radius: 0 0 50px 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+header div {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header div img {
+  width: 14%;
+  height: 30px;
+  object-fit: cover;
+  /* object-position: 0% 100%; */
+}
+
+nav {
+  width: calc(100% - 250px);
+}
+ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 100%;
+}
+li:hover {
+  background-color: rgba(72, 21, 106, 0.7);
+  transition: 500ms;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 26px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li:hover a {
+  background-color: rgba(17, 17, 17, 0.8);
+  transition: 200ms;
+}
+/*! Navigation Ended */
+#preview {
+  width: 100%;
+  text-align: center;
+  justify-self: center;
+  grid-column: span 2;
+}
+#photo-preview {
+  width: 100%;
+}
+/* Create Pizza Form  */
+form {
+  width: 50%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  color: white;
+}
+input,
+select {
+  grid-column: span 2;
+  justify-self: left;
+  width: 100%;
+}
+input[type="checkbox"] {
+  width: initial;
+}
+select:nth-of-type(2) {
+  grid-column: span 1;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border: 1px solid yellow;
+  background: url(https://cancan.lt/upload/products_pictures/draugu.png)
+    no-repeat center;
+  background-size: 100%;
+  color: white;
+  text-shadow: 1px 1px 10px gray;
+}
+select:nth-of-type(2) option {
+  color: gray;
+}
+form button {
+  grid-column: span 3;
+}
+#toppings,
+label[for="photo"] {
+  grid-column: span 3;
+  text-align: center;
+}
+/* label[name="peperoni"] {
+  padding-top: 10px;
+}
+input[type="checkbox"]:last-of-type {
+  padding-bottom: 10px;
+} */
+
+/*! Modal Window */
+#confirm {
+  z-index: 2;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(5px);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 2.5rem;
+  flex-wrap: wrap;
+}
+#confirm p {
+  /* width: 100%;
+  height: 100px; */
+  /* flex-grow: 1; */
+}
+#confirm button {
+  font-size: 2.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
