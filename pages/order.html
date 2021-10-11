@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza</title>
+    <link rel="stylesheet" href="../style/order.css" />
+    <!-- scripts -->
+    <script defer src="../scripts/nav.js"></script>
+    <script defer src="../scripts/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img
+          src="https://bosopica.lt/wp-content/uploads/2019/05/pizza-heart.png"
+          alt=""
+        />
+      </div>
+      <nav>
+        <ul>
+          <li class="nav"><a href="../index.html">Home</a></li>
+          <li class="nav"><a href="order.html">Orders</a></li>
+          <li class="nav"><a href="about.html">About Us</a></li>
+          <li class="nav"><a href="contact.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="pizza-menu">
+        <h1>Pizzas:</h1>
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+          <option selected="selected" value="name">Name (A-Z)</option>
+          <option value="price">Price (cheapest first)</option>
+          <option value="heat">Heat (hottest first)</option>
+        </select>
+        <div id="output"></div>
+      </section>
+      <h2>Add Pizza!</h2>
+      <form id="new-pizza-form">
+        <!-- Name -->
+        <label for="name">Name</label>
+        <input required type="text" id="name" />
+        <!-- Price -->
+        <label for="price">Price</label>
+        <input required step="0.01" min="0" type="number" id="price" />
+        <!-- Heat -->
+        <label for="heat">Heat</label>
+        <select id="heat">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <!-- Toppings -->
+        <p id="toppings">Toppings</p>
+        <label for="pepperoni">Pepperoni</label>
+        <input type="checkbox" id="pepperoni" />
+        <label for="supreme">Supreme</label>
+        <input type="checkbox" id="supreme" />
+        <label for="hawaiian ">Hawaiian </label>
+        <input type="checkbox" id="hawaiian " />
+        <label for="bbq">BBQ Meatlovers</label>
+        <input type="checkbox" id="bbq" />
+        <label for="gbpac">Garlic butter prawns and chilli</label>
+        <input type="checkbox" id="gbpac" />
+        <label for="sausage-kale">Sausage & Kale</label>
+        <input type="checkbox" id="sausage-kale" />
+        <!-- Photo -->
+
+        <label for="photo">Photo</label>
+        <select id="photo">
+          <option default value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <div id="preview">
+          <img
+            id="photo-preview"
+            src="https://previews.123rf.com/images/worldion/worldion1506/worldion150600001/40925833-watercolor-pizza-isolated-artwork-hand-paint-vector-illustration-watercolor-can-be-used-for-sticker-.jpg"
+          />
+        </div>
+
+        <p id="error-message"></p>
+        <button type="submit">Add pizza!</button>
+      </form>
+      <div id="confirm">
+        <p>Do you really want to delete?</p>
+        <button id="yes-delete">Yes</button>
+        <button id="no-delete">No</button>
+      </div>
+    </main>
+    <footer>
+      <p>&copy;</p>
+    </footer>
+  </body>
+</html>
