@@ -1,6 +1,6 @@
 //! variables
 
-const clickBtn = document.querySelector(`#fa`);
+const clickBtn = document.querySelector(`#hamburger`);
 const menu = document.querySelector(`.dropdown`);
 const copyright = document.querySelector(`.copyright`);
 const yearNow = new Date().getFullYear();
@@ -9,6 +9,7 @@ const yearNow = new Date().getFullYear();
 // const toggleMenu = () => menu.classList.toggle(`active`);
 
 // option 2
+
 let showMenu = false;
 
 const toggleMenu = () => {
@@ -21,8 +22,9 @@ const toggleMenu = () => {
   }
 };
 
-copyright.innerHTML += yearNow + ` &copy LOBO'S car wash all rights reserved`;
+// copyright.innerHTML += yearNow + ` &copy LOBO'S car wash all rights reserved`;
 
 //! Events
-
 clickBtn.addEventListener(`click`, toggleMenu);
+
+console.log("I am connected");

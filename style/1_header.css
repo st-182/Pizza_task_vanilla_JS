@@ -1,0 +1,302 @@
+/* Header */
+
+header {
+  border: 2px solid red;
+  height: 5%;
+}
+
+.left-nav {
+  border: 2px solid orange;
+  height: 100%;
+}
+
+img {
+  height: 3rem;
+}
+
+.pizza {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s ease-in-out infinite forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Righteous", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  position: absolute;
+  z-index: 1;
+  width: 90%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-nav {
+  width: 50rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.left-nav img {
+  height: 2rem;
+}
+
+.right-nav {
+  margin-left: 8rem;
+  position: relative;
+  text-align: left;
+  width: 40%;
+  line-height: 3;
+}
+
+.navbar > li > a {
+  color: rgb(255, 62, 28);
+  text-decoration: none;
+}
+
+.navbar > li > a:hover {
+  color: rgb(255, 166, 0);
+  text-decoration: none;
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 14rem;
+  right: -20px;
+  top: 4em;
+  height: 18rem;
+  background-color: rgba(27, 27, 27, 0.8);
+  display: none;
+}
+
+.navbar {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar > .nav {
+  background-color: transparent;
+}
+
+.dropdown a {
+  font-size: 1rem;
+}
+
+.navbar > .nav {
+  list-style: none;
+  padding: 0 3rem;
+}
+.right-nav i {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+}
+
+#hamburger:hover .dropdown {
+  display: flex;
+}
+
+.fa-bars:active .dropdown {
+  display: flex;
+}
+
+/* SOCIAL MEDIA */
+
+.social-media {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: rgb(255, 152, 27);
+}
+
+.social-media a:hover {
+  color: rgb(211, 65, 39);
+}
+
+#hamburger {
+  color: rgb(177, 13, 13);
+}
+
+/*  button */
+
+.order-button {
+  width: 6rem;
+  height: 2.5rem;
+  background-color: #919191;
+  border: none;
+  color: rgb(228, 1, 1);
+  border-radius: 1px;
+}
+
+.order-button:hover {
+  background-color: rgb(82, 0, 0);
+  color: rgb(255, 139, 6);
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) {
+  .header {
+    width: 93%;
+    height: 7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: inherit;
+    padding-right: 1rem;
+    margin: 0 auto;
+  }
+  .left-nav {
+    width: 40%;
+    height: 100%;
+    position: inherit;
+  }
+
+  .right-nav {
+    width: 60%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: inherit;
+  }
+
+  .dropdown {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    position: inherit;
+  }
+
+  .social-media a {
+    font-size: 2rem;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .navbar {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  .navbar > .nav {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .navbar > li {
+    background-color: transparent;
+  }
+
+  .navbar li a {
+    font-size: 0.7rem;
+  }
+
+  .social-media {
+    width: 23%;
+  }
+
+  .social-media > a > i {
+    padding: 0;
+    margin: 0;
+  }
+
+  .social-media a {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .order {
+    width: 15%;
+  }
+}
+
+/* desktop */
+
+@media screen and (min-width: 1200px) {
+  header {
+    max-width: 1470px;
+    justify-content: space-around;
+  }
+
+  .left-nav img {
+    height: 3rem;
+  }
+
+  .dropdown {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .navbar {
+    width: 60%;
+  }
+
+  .social-media a {
+    font-size: 2rem;
+  }
+
+  .navbar > li > a {
+    font-size: 1rem;
+  }
+
+  .social-media > a > .fab {
+    font-size: 1.5rem;
+  }
+
+  .order {
+    margin: 0;
+    padding: 0;
+  }
+
+  .order-button {
+    margin-left: 2.5rem;
+  }
+}
