@@ -7,7 +7,7 @@ const yearNow = new Date().getFullYear();
 let currentYear = document.querySelector(`.year`);
 
 console.log(yearNow);
-currentYear = yearNow;
+currentYear.textContent = yearNow;
 //! functions
 // option 1
 // const toggleMenu = () => menu.classList.toggle(`active`);

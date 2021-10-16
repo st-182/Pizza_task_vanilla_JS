@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <!-- styles -->
-    <link rel="stylesheet" href="./style/2_home.css" />
-    <link rel="stylesheet" href="./style/1_header.css" />
-    <link rel="stylesheet" href="./style/3_footer.css" />
 
-    <!-- scripts -->
-    <script defer src="scripts/nav.js"></script>
-  
-  </head>
-  <body>
-    <main>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <!-- styles -->
+  <link rel="stylesheet" href="./style/2_home.css" />
+  <link rel="stylesheet" href="./style/1_header.css" />
+  <link rel="stylesheet" href="./style/3_footer.css" />
+
+  <!-- scripts -->
+  <script defer src="scripts/nav.js"></script>
+
+</head>
+
+<body>
+  <main>
     <header class="header">
 
       <!-- left navbar -->
       <div class="left-nav">
-        <a href="./index.html"><img  src="./assets/images/logo.png" alt="logo" /></a>
+        <a href="./index.html"><img src="./assets/images/logo.png" alt="logo" /></a>
 
       </div>
-  
+
       <!--right navbar -->
       <div class="right-nav">
         <img id="hamburger" src="./assets/images/hamburger.png" alt="">
         <div class="dropdown">
-    
-  
+
+
           <ul class="navbar">
             <li class="nav"><a href="index.html">Home</a></li>
             <li class="nav"><a href="./pages/menu.html">Menu</a></li>
@@ -41,36 +43,38 @@
           <a class="basket" href="./pages/basket.html" basket"><img src="./assets/images/basket.png" alt=""></a>
 
           <div class="social-media">
-            <a href="https://facebook.com" target="_blank"><img src="./assets/animations/Facebook.gif" alt=""></i></i></a>
+            <a href="https://facebook.com" target="_blank"><img src="./assets/animations/Facebook.gif"
+                alt=""></i></i></a>
             <a href="https://twitter.com" target="_blank"><img src="./assets/animations/Twitter.gif" alt=""></i></i></a>
-            <a href="https://instagram.com" target="_blank"><img src="./assets/animations/Instagram.gif" alt=""></i></i></a>
+            <a href="https://instagram.com" target="_blank"><img src="./assets/animations/Instagram.gif"
+                alt=""></i></i></a>
           </div>
-             
+
         </div> <!-- dropdown div-->
-  
+
       </div> <!-- right-nav div-->
     </header>
     <section class="main">
       <!-- top homepage -->
       <div class="top-homepage">
-      <div class=top-homepage-left>
-        <div class="emoji-text">
-          <img src="./assets/images/smile.png" alt="">
-          <h4>EASY WAY TO ORDER YOUR MEALS</h4>
+        <div class=top-homepage-left>
+          <div class="emoji-text">
+            <img src="./assets/images/smile.png" alt="">
+            <h4>EASY WAY TO ORDER YOUR MEALS</h4>
+          </div>
+          <h1>Choosing Healthy & Authentic Food</h1>
+          <h3>Just confirm your order and enjoy your freshly made food...</h3>
+          <div class="order-buttons">
+            <a class="first-button" href="./pages/order.html"><button>Order Now</button></a>
+            <a class="second-button" href="./pages/menu.html">
+              <h4>See Menu</h4>
+            </a>
+          </div>
         </div>
-<h1>Choosing Healthy & Authentic Food</h1>
-<h3>Just confirm your order and enjoy your freshly made food...</h3>
-<div class="order-buttons">
-  <a class="first-button" href="./pages/order.html"><button>Order Now</button></a>
-  <a class="second-button" href="./pages/menu.html"><h4>See Menu</h4></a>
-</div>
+        <div class=top-homepage-right>
+          <img src="./assets/images/pizza-2.png" alt="" />
+        </div>
       </div>
-      <div class=top-homepage-right>
-        <img src="./assets/images/pizza-2.png" alt=""/>
-      </div>
-          
-      </div>
-
       <div class="hand">
         <img src="./assets/images/hand.png" alt="">
       </div>
@@ -78,18 +82,18 @@
       <div class="bottom-homepage">
         <div class="table-text">
           <h2>Book a table</h2>
-        <img src="./assets/animations/navigation_arrow_down.svg" alt="">
+          <img src="./assets/animations/navigation_arrow_down.svg" alt="">
         </div>
         <!-- table booking form -->
         <form action="submit">
           <div class="single-form-section">
-          <label for="Date">Date</label>
+            <label for="Date">Date</label>
             <select class="select" name="Date" id=""></select>
           </div>
           <div class="single-form-section">
             <label for="Time">Time</label>
             <select class="select" name="Time" id=""></select>
-          </div >
+          </div>
           <div class="single-form-section">
             <label for="Email">Email</label>
             <input type="email" placeholder="youremail@email.com">
@@ -98,8 +102,8 @@
         </form>
       </div>
     </section>
-     
-     <footer>&copy; All rights reserved&nbsp;<span> Sauce Pizza</span></footer>
-    </main>
-  </body>
+    <footer>&copy; All rights reserved&nbsp;<span> Sauce Pizza</span></footer>
+  </main>
+</body>
+
 </html>
