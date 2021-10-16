@@ -4,6 +4,10 @@ const clickBtn = document.querySelector(`#hamburger`);
 const menu = document.querySelector(`.dropdown`);
 const copyright = document.querySelector(`.copyright`);
 const yearNow = new Date().getFullYear();
+let currentYear = document.querySelector(`.year`);
+
+console.log(yearNow);
+currentYear = yearNow;
 //! functions
 // option 1
 // const toggleMenu = () => menu.classList.toggle(`active`);

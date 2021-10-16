@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --first: rgb(255, 108, 40);
+  --second: gray;
+  --third: rgb(35, 35, 77);
+  --fourth: rgb(255, 145, 0);
+  --fifth: rgb(252, 195, 72);
+}
+
+.main h2 {
+  font-size: 3rem;
+  opacity: 0.4;
+  padding: 0;
+  margin: 0;
+  color: var(--fourth);
+  padding: 0;
+  margin: 0;
+}
+
+.menu-cards {
+  width: 80%;
+  height: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu-card {
+  height: 21rem;
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  margin: 1rem;
+}
+
+.pizza-image img {
+  height: 12rem;
+  position: absolute;
+  left: 9%;
+  transition: 0.3s;
+}
+
+.pizza-image img:hover {
+  height: 13rem;
+  transition: 0.3s;
+  left: 4.8%;
+}
+
+.basket-image {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem 0.5rem 0;
+  background-color: var(--third);
+  border-radius: 1.2rem 1rem 5rem 1rem;
+  position: absolute;
+  left: 75%;
+  top: 5%;
+  cursor: pointer;
+}
+
+.basket-image:hover {
+  background-color: var(--first);
+}
+
+.basket-image img {
+  height: 2rem;
+  border-radius: 1rem 0 0 0;
+}
+
+.bottom-text {
+  height: 70%;
+  width: 90%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(74, 108, 139, 0.2) 100%
+  );
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-right: 0.3rem solid rgba(117, 117, 117, 0.9);
+  border-top: 0.3rem solid rgba(117, 117, 117, 0.9);
+  border-left: 1px solid rgba(117, 117, 117, 0.1);
+  border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+}
+
+.bottom-text-top {
+  height: 20%;
+}
+
+.bottom-text-bottom {
+  height: 70%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 0.5rem 1rem;
+}
+
+.bottom-text-bottom h5 {
+  color: var(--third);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.bottom-text-bottom p {
+  color: var(--second);
+}
+
+.bottom-text-bottom h5 {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem 1rem 0 1rem;
+  border-top: 0.2rem solid rgba(255, 255, 255, 0.4);
+  border-right: 0.2rem solid rgba(255, 255, 255, 0.4);
+}
+
+/* hand */
+.hand-ok {
+  position: absolute;
+  right: 0%;
+  top: 70%;
+  height: 18rem;
+  overflow: none;
+}
+
+.first-button button:hover {
+  background-color: var(--third);
+  color: var(--fifth);
+  cursor: pointer;
+}
+
+/* last card */
+
+#last-card {
+  background: linear-gradient(
+    to right,
+    rgba(14, 12, 53, 0.5) 0%,
+    rgba(0, 19, 129, 0.5) 100%
+  );
+}
+
+#last-card h4 {
+  color: var(--fifth);
+}
+
+#last-card p {
+  color: white;
+}

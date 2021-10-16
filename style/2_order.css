@@ -1,17 +1,205 @@
-/*! All Elements */
-* {
-  box-sizing: border-box;
-  margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+:root {
+  --first: rgb(255, 108, 40);
+  --second: gray;
+  --third: rgb(35, 35, 77);
+  --fourth: rgb(255, 145, 0);
+  --fifth: rgb(252, 195, 72);
+  --sixth: rgb(53, 37, 107);
+}
+
+.all-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80%;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.all-main h2 {
+  font-size: 3rem;
+  opacity: 0.4;
   padding: 0;
+  margin: 0;
+  color: var(--fourth);
 }
-/*! Body */
-body {
-  background-color: #000000;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23230046' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%232f0052' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%233b075e' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%2348156a' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23552277' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
+
+#pizza-menu {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(74, 108, 139, 0.2) 100%
+  );
+  border-right: 5px solid rgba(79, 114, 160, 0.3);
+  border-top: 5px solid rgba(79, 114, 160, 0.3);
+  border-left: 1px solid rgba(117, 117, 117, 0.1);
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  width: 40%;
+  border-radius: 2rem;
+}
+
+#pizza-menu h4,
+#pizza-menu label {
+  margin: 1rem 0;
+}
+
+.preview-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#pizza-menu select {
+  width: 10rem;
+}
+
+select option:focus,
+select option:active,
+select option:hover {
+  background-color: var(--first);
+}
+
+#new-pizza-form {
+  width: 50%;
+  color: black;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-right: 5px solid rgba(79, 114, 160, 0.3);
+  border-top: 5px solid rgba(79, 114, 160, 0.3);
+  border-left: 1px solid rgba(117, 117, 117, 0.1);
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(74, 108, 139, 0.2) 100%
+  );
+  border-radius: 2rem;
+  padding: 1rem 0;
+}
+
+#new-pizza-form h4,
+#pizza-menu h4 {
+  color: var(--third);
+  font-weight: 800;
+  opacity: 0.4;
+  font-size: 2.5rem;
+}
+
+.labels-toppings {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80%;
+  width: 100%;
+}
+
+.labels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.labels label {
+  margin: 1rem 0;
+}
+
+.toppings {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 40%;
+}
+.toppings label,
+.toppings input {
+  margin: 0.5rem 0;
+}
+
+.topping {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topping input {
+  margin-right: 1rem;
+}
+
+#toppings {
+  font-size: 2rem;
+  color: var(--first);
+  font-family: "Dancing Script", cursive;
+  margin-bottom: 1rem;
+}
+
+#new-pizza-form input,
+#pizza-menu select {
+  width: 15rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--second);
+  padding-left: 1rem;
+  color: var(--second);
+}
+
+#heat,
+#photo {
+  width: 15rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  color: var(--second);
+}
+
+/* checkboxes */
+#new-pizza-form input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 2rem;
+}
+
+#new-pizza-form input[type="checkbox"]:checked {
+  filter: invert(100%) hue-rotate(190deg);
+}
+
+#new-pizza-form button {
+  background-color: var(--fourth);
+  height: 2.2rem;
+  width: 8rem;
+  border-radius: 1rem 1rem 0 1rem;
+  border: none;
   color: white;
+  margin-right: 2rem;
+  cursor: pointer;
 }
+
+#new-pizza-form button:hover {
+  background-color: var(--third);
+  color: var(--fifth);
+}
+
 /*! Pizzas list */
 #output {
   display: grid;
@@ -19,152 +207,6 @@ body {
   gap: 10px;
   color: white;
 }
-
-.pizza-item {
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  display: grid;
-  grid-template-columns: 70% 10% 10% 10%;
-  /* width: 50%;
-  margin: 0 auto; */
-}
-.pizza-item img {
-  height: 1.5rem;
-  align-self: center;
-  justify-self: center;
-}
-.pizza-item img:last-of-type,
-.pizza-item p,
-.pizza-item button {
-  grid-column: span 4;
-}
-.pizza-item img:last-of-type {
-  height: 200px;
-}
-/*! Pizzas list END */
-
-/*! Navigation */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  border-radius: 0 0 50px 50px;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  height: 30px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-}
-header div {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  min-width: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header div img {
-  width: 14%;
-  height: 30px;
-  object-fit: cover;
-  /* object-position: 0% 100%; */
-}
-
-nav {
-  width: calc(100% - 250px);
-}
-ul {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-  overflow: hidden;
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.2);
-  height: 100%;
-}
-li:hover {
-  background-color: rgba(72, 21, 106, 0.7);
-  transition: 500ms;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 5px 26px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li:hover a {
-  background-color: rgba(17, 17, 17, 0.8);
-  transition: 200ms;
-}
-/*! Navigation Ended */
-#preview {
-  width: 100%;
-  text-align: center;
-  justify-self: center;
-  grid-column: span 2;
-}
-#photo-preview {
-  width: 100%;
-}
-/* Create Pizza Form  */
-form {
-  width: 50%;
-  margin: 10px auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  padding: 10px;
-  color: white;
-}
-input,
-select {
-  grid-column: span 2;
-  justify-self: left;
-  width: 100%;
-}
-input[type="checkbox"] {
-  width: initial;
-}
-select:nth-of-type(2) {
-  grid-column: span 1;
-  align-self: center;
-  justify-self: center;
-  text-align: center;
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  border: 1px solid yellow;
-  background: url(https://cancan.lt/upload/products_pictures/draugu.png)
-    no-repeat center;
-  background-size: 100%;
-  color: white;
-  text-shadow: 1px 1px 10px gray;
-}
-select:nth-of-type(2) option {
-  color: gray;
-}
-form button {
-  grid-column: span 3;
-}
-#toppings,
-label[for="photo"] {
-  grid-column: span 3;
-  text-align: center;
-}
-/* label[name="peperoni"] {
-  padding-top: 10px;
-}
-input[type="checkbox"]:last-of-type {
-  padding-bottom: 10px;
-} */
 
 /*! Modal Window */
 #confirm {
@@ -184,11 +226,7 @@ input[type="checkbox"]:last-of-type {
   font-size: 2.5rem;
   flex-wrap: wrap;
 }
-#confirm p {
-  /* width: 100%;
-  height: 100px; */
-  /* flex-grow: 1; */
-}
+
 #confirm button {
   font-size: 2.5rem;
 }
@@ -196,4 +234,48 @@ input[type="checkbox"]:last-of-type {
 /* Footer */
 footer {
   text-align: center;
+}
+
+.hand-fingers {
+  position: absolute;
+  height: 20rem;
+  bottom: 0%;
+  left: 20%;
+}
+
+/* absolute food images */
+
+.food-image {
+  position: absolute;
+  height: 6rem;
+}
+
+.mushrooms {
+  left: 3%;
+  height: 10rem;
+  filter: blur(0.1rem);
+}
+
+.blue-cheese {
+  bottom: 2%;
+  right: 35%;
+  height: 12rem;
+  filter: blur(0.1rem);
+}
+
+.garlic {
+  right: 13%;
+  top: 12%;
+  height: 8rem;
+}
+
+.onions {
+  bottom: 10%;
+  right: 2%;
+  height: 10rem;
+}
+
+.spinach {
+  top: 20%;
+  right: 55%;
 }

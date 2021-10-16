@@ -1,7 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --first: rgb(255, 108, 40);
+  --second: gray;
+  --third: rgb(35, 35, 77);
+  --fourth: rgb(255, 145, 0);
+  --fifth: rgb(252, 195, 72);
 }
 
 body {
@@ -11,14 +21,202 @@ body {
 main {
   background: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0.9) 50%,
+    rgba(255, 255, 255, 0.5) 50%,
     rgba(255, 255, 255, 0.4) 100%
   );
-  border-right: 4px solid rgb(255, 255, 255, 0.1);
-  border-top: 4px solid rgb(255, 255, 255, 0.3);
+  border-right: 0.4rem solid rgb(255, 255, 255, 0.1);
+  border-top: 0.4rem solid rgb(255, 255, 255, 0.3);
   height: 90vh;
   width: 90vw;
   border-radius: 2rem;
   margin: 0 auto;
   margin-top: 5vh;
+}
+
+.main {
+  height: 82%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* top homepage */
+.top-homepage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  width: 62%;
+}
+
+.top-homepage-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 60%;
+  width: 50%;
+}
+
+.emoji-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.emoji-text img {
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.top-homepage-left h1 {
+  font-size: 3rem;
+  width: 30rem;
+  font-weight: 800;
+  color: var(--third);
+}
+
+.top-homepage-left h3 {
+  width: 20rem;
+  color: var(--second);
+}
+
+.order-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.first-button button {
+  background-color: var(--fourth);
+  height: 2.2rem;
+  width: 8rem;
+  border-radius: 1rem 1rem 0 1rem;
+  border: none;
+  color: white;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.first-button button:hover {
+  background-color: var(--third);
+  color: var(--fifth);
+}
+
+.second-button {
+  text-decoration: none;
+}
+
+.second-button h4 {
+  color: var(--fourth);
+  border-bottom: 2px solid var(--fourth);
+  padding-bottom: 0.3rem;
+}
+
+.second-button h4:hover {
+  border-bottom: 2px solid var(--third);
+}
+
+/* hand */
+.hand {
+  position: absolute;
+  left: 0;
+  top: 49%;
+}
+
+.hand img {
+  height: 9rem;
+}
+
+/* bottom homepage */
+.bottom-homepage {
+  height: 20%;
+  width: 80%;
+}
+
+.table-text {
+  display: flex;
+  width: 20rem;
+  position: absolute;
+  top: 68%;
+  left: 22.5%;
+}
+
+.table-text img {
+  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(4deg);
+}
+
+.table-text img {
+  margin-left: 2rem;
+  height: 2rem;
+}
+
+/* right homepage */
+.top-homepage-right {
+  width: 50%;
+}
+
+.top-homepage-right img {
+  width: 110%;
+}
+
+/* bottom homepage */
+.bottom-homepage form {
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.9) 100%
+  );
+  border-left: 1px solid rgba(117, 117, 117, 0.1);
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  border-right: 0.3rem solid rgba(117, 117, 117, 0.4);
+  border-top: 0.3rem solid rgba(117, 117, 117, 0.4);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.single-form-section {
+  height: 80%;
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.single-form-section label {
+  font-weight: 600;
+}
+
+.single-form-section input {
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  height: 2rem;
+  width: 15rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  outline: none;
+}
+
+.single-form-section select {
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  width: 12rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+}
+
+.bottom-homepage button {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--first);
+  color: white;
+  border: none;
 }

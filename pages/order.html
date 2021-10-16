@@ -6,100 +6,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza</title>
     <link rel="stylesheet" href="../style/order.css" />
+    <link rel="stylesheet" href="../style/2_home.css" />
+    <link rel="stylesheet" href="../style/1_header.css" />
+    <link rel="stylesheet" href="../style/2_order.css" />
+    <link rel="stylesheet" href="../style/3_footer.css" />
+    
+    
     <!-- scripts -->
     <script defer src="../scripts/nav.js"></script>
     <script defer src="../scripts/index.js"></script>
   </head>
   <body>
-    <header>
-      <div>
-        <img
-          src="https://bosopica.lt/wp-content/uploads/2019/05/pizza-heart.png"
-          alt=""
-        />
-      </div>
-      <nav>
-        <ul>
-          <li class="nav"><a href="../index.html">Home</a></li>
-          <li class="nav"><a href="order.html">Orders</a></li>
-          <li class="nav"><a href="about.html">About Us</a></li>
-          <li class="nav"><a href="contact.html">Contacts</a></li>
-        </ul>
-      </nav>
-    </header>
+    
     <main>
+      <header class="header">
+
+        <!-- left navbar -->
+        <div class="left-nav">
+          <a href="../index.html"><img  src="../assets/images/logo.png" alt="logo" /></a>
+        </div>
+    
+        <!--right navbar -->
+        <div class="right-nav">
+          <img id="hamburger" src="../assets/images/hamburger.png" alt="">
+          <div class="dropdown">
+      
+          <!-- navbar -->
+           
+          <ul class="navbar">
+            <li class="nav"><a href="../index.html">Home</a></li>
+            <li class="nav"><a href="menu.html">Menu</a></li>
+            <li class="nav"><a href="order.html">Custom pizza</a></li>
+            <li class="nav"><a href="contact.html">Contacts</a></li>
+          </ul>
+
+          <!-- basket -->
+          <a class="basket" href="order.html" basket"><img src="../assets/images/basket.png" alt=""></a>
+        
+          <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><img src="../assets/animations/Facebook.gif" alt=""></i></i></a>
+            <a href="https://twitter.com" target="_blank"><img src="../assets/animations/Twitter.gif" alt=""></i></i></a>
+            <a href="https://instagram.com" target="_blank"><img src="../assets/animations/Instagram.gif" alt=""></i></i></a>
+          </div>
+
+          </div> <!-- dropdown div closing-->
+    
+        </div> <!-- right-nav div closing-->
+      </header>
+      
+     <div class="all-main">
+      <h2>Custom pizza</h2>
+      <div class="main">
+        
+        <form id="new-pizza-form">
+          <h4>Create your pizza...</h4>
+          <!-- form top section -->
+          <div class="labels-toppings">
+
+    
+          <div class="labels">
+          <!-- Name -->
+          <label for="name">Name</label>
+          <input required type="text" id="name" placeholder="Name your pizza" />
+          <!-- Price -->
+          <!-- <label for="price">Price</label>
+          <input required step="0.01" min="0" type="number" id="price" /> -->
+          <!-- Heat -->
+          <label for="heat">Spiciness</label>
+          <select id="heat" >
+            <option value="" disabled selected>Select your options</option>
+            <option value="1">Mild</option>
+            <option value="2">Hot</option>
+            <option value="3">Smokey</option>
+          </select>
+     <!-- Photo -->
+     <div class="preview-photo">
+      <label for="photo">Photo</label>
+      <select id="photo">
+        <option value="" disabled selected>Select your pizza image</option>
+        <option default value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    </div>
+    <!-- preview photo -->
+    </div>
+     <!-- labels closing div -->
+
+      <!-- <div id="preview">
+        <img
+          id="photo-preview"
+          src="https://previews.123rf.com/images/worldion/worldion1506/worldion150600001/40925833-watercolor-pizza-isolated-artwork-hand-paint-vector-illustration-watercolor-can-be-used-for-sticker-.jpg"
+        />
+      </div> -->
+     
+
+          <!-- Toppings -->
+          <div class="toppings">
+          <p id="toppings">Toppings</p>
+          <div class="topping">
+            <input type="checkbox" id="blue-cheese" />
+            <label for="blue-cheese">Blue cheese</label>
+            
+          </div>
+          <div class="topping">
+            <input type="checkbox" id="sausage" />
+          <label for="sausage">Sausage</label>
+        
+        </div>
+          <div class="topping">
+            <input type="checkbox" id="bacon " />
+          <label for="bacon">Bacon</label>
+        
+        </div>
+          <div class="topping">
+            <input type="checkbox" id="onions" />
+          <label for="onions">Onions</label>
+        
+        </div>
+          <div class="topping">
+            <input type="checkbox" id="spinach" />
+          <label for="spinach">Spinach</label>
+         
+        </div>
+          <div class="topping">
+            <input type="checkbox" id="mushrooms" />
+          <label for="mushrooms">Mushrooms</label>
+         
+        </div>
+      </div>
+</div>
+
+
+  <img class ="food-image mushrooms" src="../assets/images/mushrooms.png" alt="">
+  <img class ="food-image blue-cheese" src="../assets/images/blue-cheese.png" alt="">
+  <img class ="food-image garlic" src="../assets/images/garlic.png" alt="">
+  <img class ="food-image onions" src="../assets/images/onions.png" alt="">
+  <img class ="food-image spinach" src="../assets/images/spinach.png" alt="">
+
+      <!-- toppings end -->
+        
+          <!-- labels and toppings end -->
+          
+          <p id="error-message"></p>
+          <button type="submit">Add pizza!</button>
+        </form>
+       
+    
       <section id="pizza-menu">
-        <h1>Pizzas:</h1>
+        <h4>Your custom pizzas:</h4>
         <label for="sort">Sort by:</label>
         <select id="sort">
           <option selected="selected" value="name">Name (A-Z)</option>
-          <option value="price">Price (cheapest first)</option>
+         
           <option value="heat">Heat (hottest first)</option>
         </select>
         <div id="output"></div>
       </section>
-      <h2>Add Pizza!</h2>
-      <form id="new-pizza-form">
-        <!-- Name -->
-        <label for="name">Name</label>
-        <input required type="text" id="name" />
-        <!-- Price -->
-        <label for="price">Price</label>
-        <input required step="0.01" min="0" type="number" id="price" />
-        <!-- Heat -->
-        <label for="heat">Heat</label>
-        <select id="heat">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-        </select>
-        <!-- Toppings -->
-        <p id="toppings">Toppings</p>
-        <label for="pepperoni">Pepperoni</label>
-        <input type="checkbox" id="pepperoni" />
-        <label for="supreme">Supreme</label>
-        <input type="checkbox" id="supreme" />
-        <label for="hawaiian ">Hawaiian </label>
-        <input type="checkbox" id="hawaiian " />
-        <label for="bbq">BBQ Meatlovers</label>
-        <input type="checkbox" id="bbq" />
-        <label for="gbpac">Garlic butter prawns and chilli</label>
-        <input type="checkbox" id="gbpac" />
-        <label for="sausage-kale">Sausage & Kale</label>
-        <input type="checkbox" id="sausage-kale" />
-        <!-- Photo -->
 
-        <label for="photo">Photo</label>
-        <select id="photo">
-          <option default value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
-        <div id="preview">
-          <img
-            id="photo-preview"
-            src="https://previews.123rf.com/images/worldion/worldion1506/worldion150600001/40925833-watercolor-pizza-isolated-artwork-hand-paint-vector-illustration-watercolor-can-be-used-for-sticker-.jpg"
-          />
-        </div>
-
-        <p id="error-message"></p>
-        <button type="submit">Add pizza!</button>
-      </form>
+      
+  
       <div id="confirm">
         <p>Do you really want to delete?</p>
         <button id="yes-delete">Yes</button>
         <button id="no-delete">No</button>
       </div>
-    </main>
-    <footer>
-      <p>&copy;</p>
-    </footer>
+
+  </div>
+     </div>
+    <img class="hand-fingers" src="../assets/images/hand-fingers.png" alt="">
+    <footer>&copy; All rights reserved&nbsp;<span> Sauce Pizza</span></footer>
+  </main>
   </body>
 </html>

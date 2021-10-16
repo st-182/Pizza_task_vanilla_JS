@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="../style/2_home.css" />
+    <link rel="stylesheet" href="../style/1_header.css" />
+    <link rel="stylesheet" href="../style/2_basket.css" />
+    <link rel="stylesheet" href="../style/3_footer.css" />
+
+    <!-- scripts -->
+    <script defer src="../scripts/nav.js"></script>
+  
+  </head>
+  <body>
+    <main>
+    <header class="header">
+
+   <!-- left navbar -->
+   <div class="left-nav">
+    <a href="../index.html"><img  src="../assets/images/logo.png" alt="logo" /></a>
+
+  </div>
+
+  <!--right navbar -->
+  <div class="right-nav">
+    <img id="hamburger" src="../assets/images/hamburger.png" alt="">
+    <div class="dropdown">
+
+  <!-- navbar -->
+          
+          <ul class="navbar">
+            <li class="nav"><a href="../index.html">Home</a></li>
+            <li class="nav"><a href="menu.html">Menu</a></li>
+            <li class="nav"><a href="order.html">Custom pizza</a></li>
+            <li class="nav"><a href="contact.html">Contacts</a></li>
+          </ul>
+
+          <!-- basket -->
+          <a class="basket" href="basket.html" basket"><img src="../assets/images/basket.png" alt=""></a>
+        
+          <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><img src="../assets/animations/Facebook.gif" alt=""></i></i></a>
+            <a href="https://twitter.com" target="_blank"><img src="../assets/animations/Twitter.gif" alt=""></i></i></a>
+            <a href="https://instagram.com" target="_blank"><img src="../assets/animations/Instagram.gif" alt=""></i></i></a>
+          </div>
+  
+        </div> <!-- dropdown div-->
+  
+      </div> <!-- right-nav div-->
+    </header>
+    <section class="main">
+     <h1>Basket</h1>
+
+     <div class="payment-basket">
+       <div class="payment-container">
+         <h2>Select your form of payment</h2>
+         <div class="payments">
+           <div class="payment">
+             <img class="logo" src="../assets/images/card.svg" alt="card logo">
+             <p>Credit Card</p>
+             <img class="svg"  src="../assets/images/arrow-right.svg" alt="arrow icon">
+           </div>
+           <div class="payment">
+            <img class="logo" src="../assets/images/paypal.svg" alt="paypal logo">
+            <p>Paypal</p>
+            <img  class="svg"  src="../assets/images/arrow-right.svg" alt="arrow icon">
+          </div>
+          <div class="payment">
+            <img class="logo" src="../assets/images/stripe.svg" alt="stripe logo">
+            <p>Stripe</p>
+            <img  class="svg"  src="../assets/images/arrow-right.svg" alt="arrow icon">
+          </div>
+          <div class="payment">
+            <img  class="logo" src="../assets/images/bitcoin.svg" alt="bitcoin logo">
+            <p>Bitcoin</p>
+            <img class="svg" src="../assets/images/arrow-right.svg" alt="arrow icon">
+          </div>
+         </div>
+
+         <button>Proceed</button>
+       </div>
+
+
+       <div class="basket-container">
+         <h2>Your cart</h2>
+       </div>
+     </div>
+    </section>
+    <img class="hand-pay" src="../assets/images/hand-pay.png" alt="">
+     <footer>&copy; All rights reserved&nbsp;<span> Sauce Pizza</span></footer>
+    </main>
+  </body>
+</html>

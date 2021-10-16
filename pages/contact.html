@@ -4,50 +4,155 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <!-- scripts -->  
-     <script defer src="../scripts/nav.js"></script>
-    <title>Document</title>
-    <h1>This is a test page</h1>
+    <title>Menu</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="../style/2_home.css" />
+    <link rel="stylesheet" href="../style/1_header.css" />
+    <link rel="stylesheet" href="../style/2_contact.css" />
+    <link rel="stylesheet" href="../style/3_footer.css" />
+  
+
+    <!-- scripts -->
+    <script defer src="../scripts/nav.js"></script>
+  
   </head>
   <body>
+    <main>
     <header class="header">
 
-      <!-- left navbar -->
-      <div class="left-nav">
-        <a href="index.html"><img src="../Media/logo2.png" alt="image of a car" /></a>
-        <img src ="../Media/Lobos car wash.png" alt="image of a car" />
-      </div>
-  
-      <!--right navbar -->
-      <div class="right-nav">
-        <i id = "fa" class="fas fa-bars fa-2x"></i>
-        <div class="dropdown">
-    
-  
+   <!-- left navbar -->
+   <div class="left-nav">
+    <a href="../index.html"><img  src="../assets/images/logo.png" alt="logo" /></a>
+
+  </div>
+
+  <!--right navbar -->
+  <div class="right-nav">
+    <img id="hamburger" src="../assets/images/hamburger.png" alt="">
+    <div class="dropdown">
+
+  <!-- navbar -->
+          
           <ul class="navbar">
             <li class="nav"><a href="../index.html">Home</a></li>
-            <li class="nav"><a href="order.html">Orders</a></li>
-            <li class="nav"><a href="about.html">About Us</a></li>
+            <li class="nav"><a href="menu.html">Menu</a></li>
+            <li class="nav"><a href="order.html">Custom pizza</a></li>
             <li class="nav"><a href="contact.html">Contacts</a></li>
           </ul>
+
+          <!-- basket -->
+          <a class="basket" href="basket.html" basket"><img src="../assets/images/basket.png" alt=""></a>
         
           <div class="social-media">
-            <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></i></a>
-            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fas fa-share-alt"></i></a>
-          </div>
-  
-          <div class="order">
-            <a href="./booking.html"><button class="order-button">Book Now</button>
-            </a>
+            <a href="https://facebook.com" target="_blank"><img src="../assets/animations/Facebook.gif" alt=""></i></i></a>
+            <a href="https://twitter.com" target="_blank"><img src="../assets/animations/Twitter.gif" alt=""></i></i></a>
+            <a href="https://instagram.com" target="_blank"><img src="../assets/animations/Instagram.gif" alt=""></i></i></a>
           </div>
   
         </div> <!-- dropdown div-->
   
       </div> <!-- right-nav div-->
     </header>
-    <main>
-     <h1>Contact us</h1>
+    <section class="main">
+      <h2>Contact Us</h2>
+      <p>Any questions or remarks? Just write us a message </p>
+
+        <!-- address section -->
+        <div class="about-contact">
+          <div class="about">
+            <div class="address">
+              <h4>Contact Information</h4>
+              <p>Fill up the form and our Team will get back to you within 24 hours.</p>
+            </div>
+      
+            <div class="address-container">
+              <!-- first address -->
+              <div class="contact-text">
+               <img src="../assets/images/phone.svg" alt="phone icon">
+                <p>+0123 4567 8910</p>
+              </div>
+              <div class="contact-text">
+                <img src="../assets/images/envelope.svg" alt="envelope icon">
+                 <p>hello@sauce.com</p>
+               </div>
+               <div class="contact-text">
+                <img src="../assets/images/location.svg" alt="location icon">
+                 <p>439 N Wells St, Chicago, IL 60654, United States</p>
+               </div>
+           
+              
+            </div>
+            <div class="social-media-form">
+              <div class="big-bubble"></div>
+              <div class="small-bubble"></div>
+              <a href="https://facebook.com" target="_blank"> <img src="../assets/images/facebook-static.svg" alt=""></a>
+              <a href="https://twitter.com" target="_blank"><img src="../assets/images/twitter-static.svg" alt=""></a>
+              <a class="instagram" href="https://instagram.com" target="_blank"><img src="../assets/images/instagram-static.svg" alt=""></a>
+              <a href="https://tumblr.com " target="_blank"><img src="../assets/images/tumblr-static.svg" alt=""></a>
+            </div>
+          </div>
+
+        <!-- contact form -->
+
+        <form class="contact-form" action="submit">
+         <div class="contact-fields">
+          <div class="contact-field">
+            <label for="name">Name</label>
+            <input type="text" placeholder="John">
+            </div>
+            <div class="contact-field">
+              <label for="surname">Surname</label>
+              <input type="text" placeholder="Doe">
+              </div>
+            
+            <div class="contact-field">
+              <label for="Email">Email</label>
+              <input type="email" placeholder="john.doe@email.com">
+            </div>
+  
+            <div class="contact-field">
+              <label for="phone">Phone</label>
+              <input type="text" placeholder="+90 543 779 94 64">
+            </div>
+         </div>
+         <!-- contact fields end -->
+         <div class="contact-options">
+           <h3>What is your main reason for contacting us</h3>
+         <div class="contact-choices">
+          <div class="contact-option">
+            <input type="radio" name="contact" value="booking">
+            <label for="booking">Booking</label>
+          </div>
+          <div class="contact-option">
+            <input type="radio" name="contact" value="menu">
+            <label for="menu">Menu</label>
+          </div>
+          <div class="contact-option">
+            <input type="radio" name="contact" value="complaints">
+            <label for="complaints">Complaints</label>
+          </div>
+          <div class="contact-option">
+            <input type="radio" name="contact" value="other">
+            <label for="other">Other</label>
+          </div>
+         </div>
+           
+         </div>
+         <div class="textarea-field">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" placeholder="Write your message"></textarea>
+        </div>
+          <button type="submit">Send Message</button>
+          
+        </form>
+
+       
+        </div>
+    </section>
+
+    <img class="write-hand" src="../assets/images/hand-write.png" alt="">
+     
+     <footer>&copy; All rights reserved&nbsp;<span> Sauce Pizza</span></footer>
     </main>
   </body>
 </html>

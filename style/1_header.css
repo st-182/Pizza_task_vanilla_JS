@@ -1,37 +1,16 @@
-/* Header */
-
-header {
-  border: 2px solid red;
-  height: 5%;
-}
-
-.left-nav {
-  border: 2px solid orange;
-  height: 100%;
-}
-
-img {
-  height: 3rem;
-}
-
-.pizza {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: dash 5s ease-in-out infinite forwards;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 * {
-  font-family: "Righteous", cursive;
+  font-family: "Ubuntu", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --first: rgb(255, 108, 40);
+  --second: gray;
+  --third: rgb(35, 35, 77);
+  --fourth: rgb(255, 145, 0);
 }
 
 body {
@@ -45,7 +24,6 @@ body {
   position: absolute;
   z-index: 1;
   width: 90%;
-  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,7 +37,7 @@ body {
 }
 
 .left-nav img {
-  height: 2rem;
+  height: 3rem;
 }
 
 .right-nav {
@@ -71,7 +49,7 @@ body {
 }
 
 .navbar > li > a {
-  color: rgb(255, 62, 28);
+  color: var(--second);
   text-decoration: none;
 }
 
@@ -79,6 +57,12 @@ body {
   color: rgb(255, 166, 0);
   text-decoration: none;
 }
+
+.navbar li:first-child {
+  border-bottom: 2px solid orange;
+  font-weight: 600;
+}
+
 .dropdown {
   display: flex;
   flex-direction: column;
@@ -135,41 +119,29 @@ body {
   justify-content: space-around;
 }
 
-.social-media a {
-  text-decoration: none;
-  color: rgb(255, 152, 27);
-}
-
-.social-media a:hover {
-  color: rgb(211, 65, 39);
+.social-media img {
+  height: 2rem;
 }
 
 #hamburger {
   color: rgb(177, 13, 13);
 }
 
-/*  button */
+/*  basket */
 
-.order-button {
-  width: 6rem;
-  height: 2.5rem;
-  background-color: #919191;
-  border: none;
-  color: rgb(228, 1, 1);
-  border-radius: 1px;
+.basket img {
+  height: 1.5rem;
 }
 
-.order-button:hover {
-  background-color: rgb(82, 0, 0);
-  color: rgb(255, 139, 6);
+.basket img:hover {
+  color: red;
 }
-
 /* tablet */
 
 @media screen and (min-width: 768px) {
   .header {
-    width: 93%;
-    height: 7rem;
+    width: 65%;
+    height: 10%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -182,6 +154,10 @@ body {
     width: 40%;
     height: 100%;
     position: inherit;
+  }
+
+  .left-nav img {
+    height: 5rem;
   }
 
   .right-nav {
@@ -264,10 +240,6 @@ body {
   header {
     max-width: 1470px;
     justify-content: space-around;
-  }
-
-  .left-nav img {
-    height: 3rem;
   }
 
   .dropdown {

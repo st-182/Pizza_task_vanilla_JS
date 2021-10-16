@@ -8,6 +8,7 @@
     <!-- styles -->
     <link rel="stylesheet" href="./style/2_home.css" />
     <link rel="stylesheet" href="./style/1_header.css" />
+    <link rel="stylesheet" href="./style/3_footer.css" />
 
     <!-- scripts -->
     <script defer src="scripts/nav.js"></script>
@@ -19,7 +20,7 @@
 
       <!-- left navbar -->
       <div class="left-nav">
-        <img src="assets/images/logo.png" alt="logo" />
+        <a href="./index.html"><img  src="./assets/images/logo.png" alt="logo" /></a>
 
       </div>
   
@@ -32,34 +33,73 @@
           <ul class="navbar">
             <li class="nav"><a href="index.html">Home</a></li>
             <li class="nav"><a href="./pages/menu.html">Menu</a></li>
-            <li class="nav"><a href="./pages/order.html">Orders</a></li>
+            <li class="nav"><a href="./pages/order.html">Custom pizza</a></li>
             <li class="nav"><a href="./pages/contact.html">Contacts</a></li>
           </ul>
-        
+
+          <!-- basket -->
+          <a class="basket" href="./pages/basket.html" basket"><img src="./assets/images/basket.png" alt=""></a>
+
           <div class="social-media">
-            <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></i></a>
-            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fas fa-share-alt"></i></a>
+            <a href="https://facebook.com" target="_blank"><img src="./assets/animations/Facebook.gif" alt=""></i></i></a>
+            <a href="https://twitter.com" target="_blank"><img src="./assets/animations/Twitter.gif" alt=""></i></i></a>
+            <a href="https://instagram.com" target="_blank"><img src="./assets/animations/Instagram.gif" alt=""></i></i></a>
           </div>
-  
-          <div class="order">
-            <a href="./booking.html"><button class="order-button">Book Now</button>
-            </a>
-          </div>
-  
+             
         </div> <!-- dropdown div-->
   
       </div> <!-- right-nav div-->
     </header>
     <section class="main">
-
-    </section>
+      <!-- top homepage -->
       <div class="top-homepage">
-      
+      <div class=top-homepage-left>
+        <div class="emoji-text">
+          <img src="./assets/images/smile.png" alt="">
+          <h4>EASY WAY TO ORDER YOUR MEALS</h4>
+        </div>
+<h1>Choosing Healthy & Authentic Food</h1>
+<h3>Just confirm your order and enjoy your freshly made food...</h3>
+<div class="order-buttons">
+  <a class="first-button" href="./pages/order.html"><button>Order Now</button></a>
+  <a class="second-button" href="./pages/menu.html"><h4>See Menu</h4></a>
+</div>
+      </div>
+      <div class=top-homepage-right>
+        <img src="./assets/images/pizza-2.png" alt=""/>
+      </div>
           
       </div>
-      <div class="bottom-homepage"></div>
-     <footer></footer>
+
+      <div class="hand">
+        <img src="./assets/images/hand.png" alt="">
+      </div>
+      <!-- bottom homepage -->
+      <div class="bottom-homepage">
+        <div class="table-text">
+          <h2>Book a table</h2>
+        <img src="./assets/animations/navigation_arrow_down.svg" alt="">
+        </div>
+        <!-- table booking form -->
+        <form action="submit">
+          <div class="single-form-section">
+          <label for="Date">Date</label>
+            <select class="select" name="Date" id=""></select>
+          </div>
+          <div class="single-form-section">
+            <label for="Time">Time</label>
+            <select class="select" name="Time" id=""></select>
+          </div >
+          <div class="single-form-section">
+            <label for="Email">Email</label>
+            <input type="email" placeholder="youremail@email.com">
+          </div>
+          <button type="submit">Book a table</button>
+        </form>
+      </div>
+    </section>
+     
+     <footer>&copy; All rights reserved&nbsp;<span> Sauce Pizza</span></footer>
     </main>
   </body>
 </html>

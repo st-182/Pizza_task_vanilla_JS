@@ -4,61 +4,222 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- scripts -->  
+    <title>Menu</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="../style/2_home.css" />
+    <link rel="stylesheet" href="../style/2_menu.css" />
+    <link rel="stylesheet" href="../style/1_header.css" />
+    <link rel="stylesheet" href="../style/3_footer.css" />
+
+    <!-- scripts -->
     <script defer src="../scripts/nav.js"></script>
-    <title>Document</title>
-    <h1>This is a test page</h1>
+  
   </head>
   <body>
+    <main>
     <header class="header">
 
       <!-- left navbar -->
       <div class="left-nav">
-        HTML CSSResult Skip Results Iframe
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
-  
-<path class="pizza" style="fill:none;stroke:#e3a208;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
-    M116.9,43c-20.8-1.6-17.7-17.3-17.7-17.3s-3.5,3.8-13.7,3.5S75,19,75,19S50.6,24.4,59,11.4c12.2-18.7,55.7-3.8,55.7-3.8
-    s42.7,14.6,26.2,33c-12.4,13.8-18.8,2.5-16.4-5.7c3.8-13.2,39.7-7.9,9.6,21.1C97,91.6,60.3,66.7,81,51.8c21.1-15.1,40,8.4,18.1,27
-    c-19.5,16.7-21,19.4-24.2,22.3s-6.7-1.9-11.1,1.3s2.2,20-4.1,21.6c-6.4,1.6-1.9-14.3-9.2-15s-3.5,10.8-7.6,11.5s-2.2-3.8-7.6-4.5
-    S8.7,138.6,4.9,136.7c-3.8-1.9-6.3-13.6,8.6-41S65.8,69,47.8,88.6C23,115.7,21.2,76.1,32,57.7C42.9,39,72.4,39.5,59.3,52.3
-    C43.2,68,40.2,39,56.5,26.7"/>
-  </svg>
+        <a href="../index.html"><img  src="../assets/images/logo.png" alt="logo" /></a>
 
-        
       </div>
   
       <!--right navbar -->
       <div class="right-nav">
-        <img id="fa" src="../assets/images/logo.png" alt="menu">
+        <img id="hamburger" src="../assets/images/hamburger.png" alt="">
         <div class="dropdown">
     
   
           <ul class="navbar">
             <li class="nav"><a href="../index.html">Home</a></li>
-            <li class="nav"><a href="order.html">Orders</a></li>
-            <li class="nav"><a href="about.html">About Us</a></li>
+            <li class="nav"><a href="menu.html">Menu</a></li>
+            <li class="nav"><a href="order.html">Custom pizza</a></li>
             <li class="nav"><a href="contact.html">Contacts</a></li>
           </ul>
+
+          <!-- basket -->
+          <a class="basket" href="basket.html" basket"><img src="../assets/images/basket.png" alt=""></a>
         
           <div class="social-media">
-            <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></i></a>
-            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fas fa-share-alt"></i></a>
+            <a href="https://facebook.com" target="_blank"><img src="../assets/animations/Facebook.gif" alt=""></i></i></a>
+            <a href="https://twitter.com" target="_blank"><img src="../assets/animations/Twitter.gif" alt=""></i></i></a>
+            <a href="https://instagram.com" target="_blank"><img src="../assets/animations/Instagram.gif" alt=""></i></i></a>
           </div>
-  
-          <div class="order">
-            <a href="./booking.html"><button class="order-button">Book Now</button>
-            </a>
-          </div>
-  
+
         </div> <!-- dropdown div-->
   
       </div> <!-- right-nav div-->
     </header>
-    <main>
-      <h1>Menu Page</h1>
-      
+    <section class="main">
+      <h2>Menu</h2>
+      <div class="menu-cards">
+        <div class="menu-card">
+          <div class="pizza-with-basket">
+            <div class="pizza-image"><img src="../assets/images/Menu/pizza-1.png" alt="pizza image"></div>
+            <div class="basket-image"><img src="../assets/images/basket-2.png" alt=""></div>
+          </div>
+          <div class="bottom-text">
+            <div class="bottom-text-top"></div>
+            <div class="bottom-text-bottom">
+              <h4>Vulcan</h4>
+              <p>With onions,  basil and pickles</p>
+
+              <h5>$9.99</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="pizza-with-basket">
+            <div class="pizza-image"><img src="../assets/images/Menu/pizza-2.png" alt="pizza image"></div>
+            <div class="basket-image"><img src="../assets/images/basket-2.png" alt=""></div>
+          </div>
+          <div class="bottom-text">
+            <div class="bottom-text-top"></div>
+            <div class="bottom-text-bottom">
+              <h4>Pepperoni</h4>
+              <p>With cheese,  pepperoni</p>
+
+              <h5>$8.99</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="pizza-with-basket">
+            <div class="pizza-image"><img src="../assets/images/Menu/pizza-3.png" alt="pizza image"></div>
+            <div class="basket-image"><img src="../assets/images/basket-2.png" alt=""></div>
+          </div>
+          <div class="bottom-text">
+            <div class="bottom-text-top"></div>
+            <div class="bottom-text-bottom">
+              <h4>Vegetarian</h4>
+              <p>With olives,  peppers, mushrooms</p>
+
+              <h5>$11.99</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="pizza-with-basket">
+            <div class="pizza-image"><img src="../assets/images/Menu/pizza-4.png" alt="pizza image"></div>
+            <div class="basket-image"><img src="../assets/images/basket-2.png" alt=""></div>
+          </div>
+          <div class="bottom-text">
+            <div class="bottom-text-top"></div>
+            <div class="bottom-text-bottom">
+              <h4>Meat</h4>
+              <p>With chicken,  pepperoni and turkey</p>
+
+              <h5>$12.99</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="pizza-with-basket">
+            <div class="pizza-image"><img src="../assets/images/Menu/pizza-5.png" alt="pizza image"></div>
+            <div class="basket-image"><img src="../assets/images/basket-2.png" alt=""></div>
+          </div>
+          <div class="bottom-text">
+            <div class="bottom-text-top"></div>
+            <div class="bottom-text-bottom">
+              <h4>Hawaiian</h4>
+              <p>With ham,  cheese and pineapple</p>
+
+              <h5>$9.99</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="pizza-with-basket">
+            <div class="pizza-image"><img src="../assets/images/Menu/pizza-6.png" alt="pizza image"></div>
+            <div class="basket-image"><img src="../assets/images/basket-2.png" alt=""></div>
+          </div>
+          <div class="bottom-text">
+            <div class="bottom-text-top"></div>
+            <div class="bottom-text-bottom">
+              <h4>Supreme</h4>
+              <p>With mushrooms,  pickles and 4 cheeses</p>
+
+              <h5>$14.99</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="pizza-with-basket">
+            <div class="pizza-image"><img src="../assets/images/Menu/pizza-7.png" alt="pizza image"></div>
+            <div class="basket-image"><img src="../assets/images/basket-2.png" alt=""></div>
+          </div>
+          <div class="bottom-text">
+            <div class="bottom-text-top"></div>
+            <div class="bottom-text-bottom">
+              <h4>Garden</h4>
+              <p>With peppers, tomatoes, brocoli and avocado</p>
+
+              <h5>$11.99</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="pizza-with-basket">
+            <div class="pizza-image"><img src="../assets/images/Menu/pizza-8.png" alt="pizza image"></div>
+            <div class="basket-image"><img src="../assets/images/basket-2.png" alt=""></div>
+          </div>
+          <div class="bottom-text">
+            <div class="bottom-text-top"></div>
+            <div class="bottom-text-bottom">
+              <h4>Fresh</h4>
+              <p>With pickles, basil, mozzarella and bacon</p>
+
+              <h5>$9.99</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="pizza-with-basket">
+            <div class="pizza-image"><img src="../assets/images/Menu/pizza-9.png" alt="pizza image"></div>
+            <div class="basket-image"><img src="../assets/images/basket-2.png" alt=""></div>
+          </div>
+          <div class="bottom-text">
+            <div class="bottom-text-top"></div>
+            <div class="bottom-text-bottom">
+              <h4>Organic</h4>
+              <p>With onions,  muscles and seaweed</p>
+
+              <h5>$9.99</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card " >
+          <div class="pizza-with-basket">
+            <div class="pizza-image"><img src="../assets/images/Menu/custom-pizza.png" alt="pizza image"></div>
+            <!-- <div class="basket-image"><img src="../assets/images/basket-2.png" alt=""></div> -->
+          </div>
+          <div class="bottom-text" id="last-card">
+            <div class="bottom-text-top"></div>
+            <div class="bottom-text-bottom">
+              <h4>Your custom pizza</h4>
+              <p>any topping</p>
+
+              <a class="first-button" href="../pages/order.html"><button>Order Now</button></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+     
+    <img class="hand-ok" src="../assets/images/hand-ok-crop.png" alt="">
+
+     <footer>&copy; <p class="year"> &nbsp;</p> All rights reserved&nbsp;<span> Sauce Pizza</span></footer>
     </main>
   </body>
 </html>
