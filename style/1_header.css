@@ -272,3 +272,23 @@ body {
     margin-left: 2.5rem;
   }
 }
+
+/* 720 screen */
+
+@media screen and (max-width: 1366px) {
+  .left-nav img {
+    height: 2.5rem;
+  }
+
+  .navbar li a {
+    font-size: 0.8rem;
+  }
+
+  .social-media img {
+    height: 1.8rem;
+  }
+
+  .basket img {
+    height: 1rem;
+  }
+}

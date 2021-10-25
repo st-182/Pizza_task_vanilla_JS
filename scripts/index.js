@@ -46,12 +46,12 @@ const addANewPizza = (e) => {
   }
   // #2 heat
   const toppingsArray = [];
-  e.target[3].checked && toppingsArray.push("Pepperoni");
-  e.target[4].checked && toppingsArray.push("Supreme");
-  e.target[5].checked && toppingsArray.push("Hawaiian");
-  e.target[6].checked && toppingsArray.push("BBQ Meatlovers");
-  e.target[7].checked && toppingsArray.push("Garlic butter prawns and chilli");
-  e.target[8].checked && toppingsArray.push("Sausage & Kale");
+  e.target[3].checked && toppingsArray.push("Blue cheese");
+  e.target[4].checked && toppingsArray.push("Sausage");
+  e.target[5].checked && toppingsArray.push("Bacon");
+  e.target[6].checked && toppingsArray.push("Onions");
+  e.target[7].checked && toppingsArray.push("Spinach");
+  e.target[8].checked && toppingsArray.push("Mushrooms");
 
   if (toppingsArray.length < 2) {
     errorMessageElement.textContent = "You have to choose minimum 2 toppings!";

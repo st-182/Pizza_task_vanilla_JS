@@ -11,3 +11,9 @@ footer {
 span {
   color: orange;
 }
+
+@media screen and (max-width: 1366px) {
+  footer {
+    font-size: 0.7rem;
+  }
+}
